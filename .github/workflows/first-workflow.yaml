@@ -11,3 +11,16 @@ jobs:
         run: |
           node -v
           npm -v
+  paraller-job-mac:
+    runs-on: macos-latest
+    steps:
+      - name: View SW Version
+      run: sw_vers
+  dependent-job:
+    runs-on: windows-latest
+    needs: run-shell-commands
+    steps:
+      - name: Echo string
+        run: Write Output "Windows String"
+      - name: Error steps
+        run: doesnotexits
