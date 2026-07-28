@@ -7,10 +7,10 @@ jobs:
     steps:
       - name: Setting an error message
         run: echo "::error::missing semicolon"
-      - name: masking
-        run: "::add-mask::Secrete String"
       - name: Grouping
         run: |
           echo "::group::My group Id
           echo "Inside group"
           echo "::endgroup::"
+      - name: masking
+        run: "::add-mask::Secret String"
