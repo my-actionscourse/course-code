@@ -13,4 +13,4 @@ jobs:
           echo "Inside group"
           echo "::endgroup::"
       - name: masking
-        run: "::add-mask::Secret String"
+        run: echo "::add-mask::Secret String"
