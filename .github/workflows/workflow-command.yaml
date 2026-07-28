@@ -14,3 +14,5 @@ jobs:
           echo "::endgroup::"
       - name: masking
         run: echo "::add-mask::Secret String"
+      - name: Echo a secret
+        run: echo "Secrete String"
