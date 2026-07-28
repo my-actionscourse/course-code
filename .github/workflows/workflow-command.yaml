@@ -9,7 +9,7 @@ jobs:
         run: echo "::error::missing semicolon"
       - name: Grouping message
         run: |
-          echo "::group::My group Id
+          echo "::group::My group Id"
           echo "Inside group"
           echo "::endgroup::"
       - name: masking
