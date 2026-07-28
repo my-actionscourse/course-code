@@ -16,11 +16,14 @@ jobs:
           echo $GITHUB_WORKSPACE
   display_wd-info-window:
     runs-on: windows-latest
+    defaults:
+      run:
+        shell: pwsh
     steps:
       - name: Display working directory and List files
         run: |
           Get-Location
           dir
-          echo $GITHUB_SHA
-          echo $GITHUB_REPOSITORY
-          echo $GITHUB_WORKSPACE
+          echo $env:GITHUB_SHA
+          echo $env:GITHUB_REPOSITORY
+          echo $env:GITHUB_WORKSPACE
