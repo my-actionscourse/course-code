@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Setting an error message
         run: echo "::error::missing semicolon"
-      - name: Grouping
+      - name: Grouping message
         run: |
           echo "::group::My group Id
           echo "Inside group"
