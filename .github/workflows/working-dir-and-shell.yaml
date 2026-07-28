@@ -1,5 +1,8 @@
 name: Working DIR and Shell
 on: [push]
+defaults:
+  run:
+    shell: bash
 jobs:
   display_wd-info-ubun2:
     runs-on: ubuntu-latest
@@ -16,8 +19,8 @@ jobs:
     steps:
       - name: Display working directory and List files
         run: |
-          pwd
-          ls -a
+          Get-Location
+          dir
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
           echo $GITHUB_WORKSPACE
