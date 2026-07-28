@@ -15,4 +15,4 @@ jobs:
       - name: masking
         run: echo "::add-mask::Secret String"
       - name: Echo a secret
-        run: echo "Secrete String"
+        run: echo "Secrete String xx"
