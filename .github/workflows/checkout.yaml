@@ -5,7 +5,7 @@ jobs:
   checkout-action:
     runs-on: ubuntu-latest
     steps:
-      - name: display files before checkout first time
+      - name: display files before checkout specific commit
         run: ls -a
       - uses: actions/checkout@df6676bd68ef5b769e5bac562b82572a16cdd85c
       - name: display files after checkout
