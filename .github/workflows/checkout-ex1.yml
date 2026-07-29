@@ -1,4 +1,4 @@
-name: Java CI
+name: Java CI Demo
 
 on:
   push:
@@ -13,11 +13,17 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Setup Java
+      - name: Setup Java 17
         uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Build
-        run: mvn clean install
+      - name: Show Files
+        run: ls -lrt
+
+      - name: Verify Java Version
+        run: java -version
+
+      - name: Build Project
+        run: mvn clean package
