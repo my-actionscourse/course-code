@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: display files before checkout specific commit
         run: ls -a
-      - uses: actions/checkout@df6676bd68ef5b769e5bac562b82572a16cdd85c
+      - uses: actions/checkout@v2
       - name: display files after checkout
         run: ls -a
   checkout-and-display-files:
