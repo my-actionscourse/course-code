@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: display files before checkout first time
         run: ls -a
-      - uses: my-actionscourse/course-code@a91a652188f5bc3a91a0934aa8651323a5c50a47
+      - uses: actions/checkout@v3
       - name: display files after checkout
         run: ls -a
   checkout-and-display-files:
