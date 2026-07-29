@@ -2,6 +2,14 @@ name: Checkout and display files
 on: [push]
 
 jobs:
+  checkout-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: display files before checkout
+        run: ls -a
+      - uses: my-actionscourse/course-code@a91a652188f5bc3a91a0934aa8651323a5c50a47
+      - name: display files after checkout
+        run: ls -a
   checkout-and-display-files:
     runs-on: ubuntu-latest
     steps:
