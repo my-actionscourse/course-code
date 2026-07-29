@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: display files before checkout first time
         run: ls -a
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@df6676bd68ef5b769e5bac562b82572a16cdd85c
       - name: display files after checkout
         run: ls -a
   checkout-and-display-files:
