@@ -5,7 +5,7 @@ jobs:
   checkout-action:
     runs-on: ubuntu-latest
     steps:
-      - name: display files before checkout
+      - name: display files before checkout first
         run: ls -a
       - uses: my-actionscourse/course-code@a91a652188f5bc3a91a0934aa8651323a5c50a47
       - name: display files after checkout
