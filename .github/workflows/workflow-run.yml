@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Echo string
-        run: echo "This is tiggered bcause 'Repository Event' completed."
+        run: echo "This is tiggered because 'Repository Event' completed."
