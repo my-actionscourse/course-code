@@ -1,0 +1,11 @@
+name: Workflow run
+on: 
+  workflow_run: 
+    workflows: [Repository Events]
+    types: [completed]
+jobs:
+  echo-string:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo string
+        run: echo "This is tiggered bcause 'Repository Event' completed."
