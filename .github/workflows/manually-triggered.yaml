@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo $GITHUB_REF
-      -run: |
+      - run: |
         echo "String: ${{inputs.string}}"
         echo "Number: ${{inputs.number}}"
         echo "Option: ${{inputs.option}}"
