@@ -1,0 +1,9 @@
+name: External event
+on: 
+  repository_dispatch:
+    types: [build]
+jobs:
+  external_events:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "External Events" 
