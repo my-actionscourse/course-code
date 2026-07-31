@@ -21,7 +21,7 @@ on:
           - Option 2
           - Option 3
       boolean:
-        description: Aboolean options
+        description: A boolean options
         required: false
         type: boolean
       environment:
